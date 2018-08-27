@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <title>Document</title>
+<script>
+        window.onload = function(){
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                                }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 2000); // Change image every 2 seconds
+                        }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="columns" style="background-color: black">
+            <div class="column" style="background-color: black"></div>
+                <div class="column is-three-quarters" style="margin-top: 50px">                                      
+                    <section class="hero is-white">
+                        <div class="hero-body">
+                            <div class="container">
+                                <h1 class="title">
+                                    Primary title
+                                </h1>
+                                <h2 class="subtitle">
+                                    Primary subtitle
+                                </h2>
+                            </div>
+                        </div>
+                </section>
+                <div>
+                    <img class="mySlides" src="img/coffee.jpg">
+                    <img class="mySlides" src="img/sound.jpg" >
+                    <img class="mySlides" src="img/workbench.jpg">
+                </div>
+                <div class="column" style="background-color: white">
+
+                            <h1 class="title">Quem Somos?</h1>
+                             <h2 class="subtitle has-text-justified">
+                                O Studio de dança MF mais novo espaço de dança de salão da região. Tem
+                                 como objetivo a qualidade de ensino de 
+                                forma lúdica , sem perder a qualidade técnica. Através
+                                 da dança de salão, procuramos caminhos para ajudar o 
+                                desenvolvimento da psicomotricidade. Com isso, oferecemos
+                                 cursos de danças para todas as idades. Em nossas aulas, 
+                                trabalhamos com a estrutura de pedagogia, andragogia e heutagogia
+                                 voltadas para Dança de Salão. A dança de Salão é uma 
+                                atividade que exercita mente/corpo, de uma forma saudável e agradável, 
+                                suprindo os mais diversos interesses. Por motivos
+                                de necessidade e busca pessoal pelo aprendizado técnico, ou por circulo de 
+                                amizades, buscamos saber qual o real motivo 
+                                você quer aprender dançar. Assim, conseguimos orientar e direcionar o futuro aluno, 
+                                para uma aula que supre sua necessidade.
+                                Sem contar que a dança de salão ajuda.  
+                             </h2>
+
+                        </div>
+
+
+              <!--parte a ser implementada-->
+
+            
+              <!-- Serviços -->
+
+            
+            
+            
+            
+            
+            
+               <!-- Localização -->
+            
+               <section class="section" id="localizacao">
+                         <h1 class="title has-text-centered">Localização</h1>
+                         <div class="columns">
+                              <div class="column is-one-quarter"></div>
+                              <div class="column">  
+                                <h2 >
+                                  R. Carvalhópolis 20 - Vl. Rio Branco<br>
+                                  São Paulo<br>
+                                  E-mail:  m.me/mfmichelferreira<br>
+                                  Ligar (11) 95911-4861<br>
+                                </h2> 
+                              </div>
+                              <div class="column" style="background-color: white">
+            
+                                <!--Mapa do Google Chrome--> 
+            
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5730461661365!2d-46.502536685586996!3d-23.51188316565085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce60926de0b3ef%3A0x92f8554b24a58271!2sRua+Carvalh%C3%B3polis%2C+20+-+Vila+Rio+Branco%2C+S%C3%A3o+Paulo+-+SP%2C+03872-030!5e0!3m2!1spt-BR!2sbr!4v1533587794124" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                              </div>
+                              <div class="column"></div>
+            
+            
+            
+            
+            
+            
+                         </div>
+                </section>    
+                <section class="hero is-link is-height ">
+                    <!-- Hero head: will stick at the top -->
+                      <!-- Hero content: will be in the middle -->
+                    
+                  
+                      <!-- Hero footer: will stick at the bottom -->
+                      <div class="hero-foot"  >
+                              <nav class="tabs is-boxed is-fullwidth">
+                                  <div class="container">
+                                      <ul>
+                                          <li><a></a></li>
+                                          <li><a href="#sobre">Conheça-nos</a></li>
+                                          <li><a href="#servicos">Foto e Videos</a></li>
+                                          <li><a href="#localizacao">Novos cursos</a></li>
+                                          <li><a href="#localizacao">Turma Regular</a></li>
+                                          <li><a href="#localizacao">Workshop</a></li>
+                                          <li><a href="#localizacao">Fale Conosco</a></li>
+                                          <span class="icon is-large">
+                                            <a href="">
+                                              <i class="fab fa-twitter-square"></i>
+                                            </a>  
+                                          </span> 
+                                          <span class="icon is-large" href="#">
+                                            <a href="https://www.facebook.com/Koala-Solu%C3%A7%C3%B5es-tecnologia-592894971048992/">
+                                              <i class="fab fa-facebook-square"></i>
+                                            </a>
+                                          </span>
+                                          <span class="icon is-large">
+                                            <a href="">
+                                              <i class="fab fa-instagram"></i>
+                                            </a>
+                                          </span> 
+                                          <li><a></a></li>
+                                      </ul>
+                                  </div>
+                              </nav>
+                          </div>
+                      </section>
+               
+              <footer class="footer">
+                <div class="content has-text-centered">
+                 <p>
+                  <strong>MF Estudio de Dança</strong>MF Estudio de dança. Todos os direitos reservados.
+                </p>
+              </div>
+            </footer>
+            
+            </div>
+
+         <div class="column" style="background-color:    black"></div>
+    </div>
+</body>
+</html>
+
