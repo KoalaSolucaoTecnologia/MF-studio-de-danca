@@ -8,30 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css.map">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <title>Document</title>
-<script>
-        window.onload = function(){
-            var myIndex = 0;
-            carousel();
+    <style>
 
-            function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("mySlides");
-                            for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";  
-                                }
-                            myIndex++;
-                            if (myIndex > x.length) {myIndex = 1}    
-                            x[myIndex-1].style.display = "block";  
-                            setTimeout(carousel, 2000); // Change image every 2 seconds
-                        }
+    .caixa1 {
+        background-color: #d04949;
+        padding: 20px;
+    }
 
-        }
-    </script>
+    .font{ 
+        color: white;
+        FONT-FAMILY:Arial,Helvetica,sans-serif"
+    }
+
+    .titulo{
+        color: white;
+        text-align: center;
+        FONT-FAMILY:Arial,Helvetica,sans-serif;
+        padding: 20px
+    }
+
+    .caixa2 {
+        background-color: azure;
+    }
+    .corColumns{
+        background-color: #0d0d0d;
+    }
+
+    .format{
+        margin-top: 50px;
+    }
+    </style>
 </head>
 <body>
-    <div class="columns" style="background-color: black">
-            <div class="column" style="background-color: black"></div>
-                <div class="column is-three-quarters" style="margin-top: 50px">                                      
+    <div class="columns corColumns">
+            <div class="column"></div>
+                <div class="column is-three-quarters format">                                      
                     <section class="hero is-white">
                         <div class="hero-body">
                             <div class="container">
@@ -45,14 +56,14 @@
                         </div>
                 </section>
                 <div>
-                    <img class="mySlides" src="img/coffee.jpg">
-                    <img class="mySlides" src="img/sound.jpg" >
-                    <img class="mySlides" src="img/workbench.jpg">
+                    <img class="mySlides" src="img/image2.jpg" >
+                    <img class="mySlides" src="img/image3.jpg">
+                    <img class="mySlides" src="img/image4.png">
                 </div>
-                <div class="column" style="background-color: white">
+                <div class="column caixa1">
 
-                            <h1 class="title">Quem Somos?</h1>
-                             <h2 class="subtitle has-text-justified">
+                            <h1 class="title titulo">Quem Somos?</h1>
+                             <h2 class="subtitle font">
                                 O Studio de dança MF mais novo espaço de dança de salão da região. Tem
                                  como objetivo a qualidade de ensino de 
                                 forma lúdica , sem perder a qualidade técnica. Através
@@ -86,19 +97,19 @@
             
                <!-- Localização -->
             
-               <section class="section" id="localizacao">
+               <section class="section caixa2" id="localizacao">
                          <h1 class="title has-text-centered">Localização</h1>
                          <div class="columns">
-                              <div class="column is-one-quarter"></div>
+                              <div class="column is-one-quarter "></div>
                               <div class="column">  
-                                <h2 >
+                                <h2>
                                   R. Carvalhópolis 20 - Vl. Rio Branco<br>
                                   São Paulo<br>
                                   E-mail:  m.me/mfmichelferreira<br>
                                   Ligar (11) 95911-4861<br>
                                 </h2> 
                               </div>
-                              <div class="column" style="background-color: white">
+                              <div class="column">
             
                                 <!--Mapa do Google Chrome--> 
             
@@ -113,14 +124,14 @@
             
                          </div>
                 </section>    
-                <section class="hero is-link is-height ">
+                <section class="hero is-link is-height">
                     <!-- Hero head: will stick at the top -->
                       <!-- Hero content: will be in the middle -->
                     
                   
                       <!-- Hero footer: will stick at the bottom -->
                       <div class="hero-foot"  >
-                              <nav class="tabs is-boxed is-fullwidth">
+                              <nav class="tabs is-boxed" style="background-color: #0000ff">
                                   <div class="container">
                                       <ul>
                                           <li><a></a></li>
@@ -162,7 +173,10 @@
             
             </div>
 
-         <div class="column" style="background-color:    black"></div>
+         <div class="column"></div>
+
+         <script src="script/script.js" async="async"></script>
+
     </div>
 </body>
 </html>
