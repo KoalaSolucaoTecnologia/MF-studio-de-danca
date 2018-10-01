@@ -9,61 +9,180 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <title>Document</title>
     <style>
-
     .caixa1 {
-        background-color: #d04949;
+        background-color: #ee4747b6;
         padding: 20px;
+
     }
 
     .font{ 
         color: white;
-        FONT-FAMILY:Arial,Helvetica,sans-serif"
+        FONT-FAMILY:Arial,Helvetica,sans-serif
     }
 
+    .font2{
+        FONT-FAMILY:Arial;
+        padding:20px;
+        text-align: center;
+    }
+        
+
     .titulo{
-        color: white;
+        color: #07060681;
         text-align: center;
         FONT-FAMILY:Arial,Helvetica,sans-serif;
-        padding: 20px
+        padding: 10px
     }
 
     .caixa2 {
-        background-color: azure;
+        background-color: white;
+        padding: 50px;
     }
     .corColumns{
         background-color: #0d0d0d;
     }
 
     .format{
-        margin-top: 50px;
+        margin-top: 60px;
     }
+
+    .header1{
+        background-color: white;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .imgProfessor{
+        margin: 0 auto;
+        padding: 20px;
+
+    }
+/*
+    ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ff00008c;
+    border-bottom: 5px solid blue;
+}
+
+ul.menu li {float: left;}
+
+ul.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+ul.menu li a:hover:not(.active) {
+    color: #1E90FF;
+    background-color: white;
+}
+
+ul.menu li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.menu li.right, 
+    ul.menu li {float: none;}
+}
+*/
+
+/*reset*/
+
+*{
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*Corpo*/
+
+.corpo{
+    width: 100%;
+}
+
+/*conteudo*/
+.conteudo{
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+/*logo*/
+
+.logo {
+    width: 200px;
+    height: 150px;
+}
+/*cores*/
+    .branco{
+        background: #FFF;
+        color: #FFF;
+    }
+/*menu*/
+.menu{
+    display: block;
+    float: right;
+    margin-top: 40px;
+    background: #ff0000;
+}
+
+
+.menu li{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu li:hover{
+    background: blue;
+}
+
+.menu a {
+    color:rgba(red, green, blue, alpha)
+}
+
+.menu a:hover{
+    color: black
+}
+
+
     </style>
 </head>
 <body>
     <div class="columns corColumns">
             <div class="column"></div>
-                <div class="column is-three-quarters format">                                      
-                    <section class="hero is-white">
-                        <div class="hero-body">
-                            <div class="container">
-                                <h1 class="title">
-                                    Primary title
-                                </h1>
-                                <h2 class="subtitle">
-                                    Primary subtitle
-                                </h2>
-                            </div>
-                        </div>
-                </section>
+            <div class="column is-three-quarters format">
+                <div class="column"></div>
+                <div class="corpo branco">
+                    <header class="conteudo">
+                            <img src="img/image5.png" alt="MF Studio de Dança" title=" Logo MF" class="logo"/>
+                            <nav> <!--tag  para o menu principal-->
+                                <ul class="menu"><!--este é o munu principal da página-->
+                                    <li><a href="#">Conheça-nos</a></li>
+                                    <li><a href="#">Foto e Videos</a></li>
+                                    <li><a href="#">Novos cursos</a></li>
+                                    <li><a href="#">Turma Regular</a></li>
+                                    <li><a href="#">Workshop</a></li>
+                                    <li><a href="#">Fale Conosco</a></li>              
+                                </ul>
+                            </nav>
+            
+                    </header>
+                </div>  
                 <div>
                     <img class="mySlides" src="img/image2.jpg" >
                     <img class="mySlides" src="img/image3.jpg">
                     <img class="mySlides" src="img/image4.png">
                 </div>
-                <div class="column caixa1">
+                <div class="column caixa2">
 
                             <h1 class="title titulo">Quem Somos?</h1>
-                             <h2 class="subtitle font">
+                             <h2 class="font2">
                                 O Studio de dança MF mais novo espaço de dança de salão da região. Tem
                                  como objetivo a qualidade de ensino de 
                                 forma lúdica , sem perder a qualidade técnica. Através
@@ -84,6 +203,37 @@
                         </div>
 
 
+                        <div class="column caixa2">                           
+                                <img class="imgProfessor" src="img/image6.jpg">            
+   
+                           </div>
+
+
+                        <div class="column caixa2">                                           
+                             <h2 class="font2">
+                           <strong>PROFESSOR</strong> Michel Ferreira, Licenciado em Ed. Física,
+                            diretor fundador do Studio de dançaMF. Iniciou-se na dança no ano de
+                            2000 como dançarino de axé chegando a trabalhar como professor e coreógrafo.
+                            Participou de campeonatos e apresentações premiados por três vezes. 
+                            Fez um ano de dança flamenca e se apresentou com a renomada e conceituada Monita Ruedas.</h2>
+
+                        	<h2  class="font2"> Em 2004, começou a praticar o samba rock pelo qual é professor até os
+                            dias atuais. Especializou-se em Dança de Salão nas seguintes escolas de
+                            dança: Swing Brasil, Academia das Artes, Spasso Art, Cia Terra e Renato
+                            Motta(Curso de Formação Profissional). Como professor, nas escolas de
+                            dança, Cia das Artes, Spasso Art, Vivartes, Universo da Dança, Discipulos 
+                            de Jorge Ben Jor, Universo Fitness, Academia campelo, Academia Urb Fitness.
+                            Como coreografo, teve sua participação em espetaculos das escolas as quais
+                            atuava como professor, e da comissão de frente da G.R.C.E.B.S. Brinco da 
+                            Marquesa por 3 anos seguidos. Em 2017 abriu seu studio, e vem se
+                            aprimorando na dança de salão, e tem como seu carro chefe o Samba 
+                            de gafieira e o Samba Rock.
+
+                             </h2>
+
+                        </div>
+
+
               <!--parte a ser implementada-->
 
             
@@ -97,12 +247,12 @@
             
                <!-- Localização -->
             
-               <section class="section caixa2" id="localizacao">
-                         <h1 class="title has-text-centered">Localização</h1>
+               <section class="section caixa1" id="localizacao">
+                         <h1 class="title has-text-centered font">Localização</h1>
                          <div class="columns">
-                              <div class="column is-one-quarter "></div>
+                              <div class="column is-one-quarter"></div>
                               <div class="column">  
-                                <h2>
+                                <h2 class="font">
                                   R. Carvalhópolis 20 - Vl. Rio Branco<br>
                                   São Paulo<br>
                                   E-mail:  m.me/mfmichelferreira<br>
